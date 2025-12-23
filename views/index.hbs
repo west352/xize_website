@@ -115,21 +115,25 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 pt-16">
-  <div class="absolute inset-0 overflow-hidden">
-    <div class="absolute top-0 left-0 w-full h-full opacity-10">
-      <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-        <defs>
-          <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)"/>
-      </svg>
-    </div>
+<section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+  <!-- Video Background -->
+  <div class="absolute inset-0 w-full h-full">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="absolute inset-0 w-full h-full object-cover"
+      poster="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1920"
+    >
+      <!-- High-quality automotive video from Pexels -->
+      <source src="https://videos.pexels.com/video-files/8987200/8987200-uhd_2560_1440_30fps.mp4" type="video/mp4">
+    </video>
+    <!-- Dark overlay for text readability -->
+    <div class="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-primary-900/70"></div>
   </div>
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
     <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">
       <span class="block">{{company.name}}</span>
     </h1>
