@@ -71,6 +71,19 @@ export function ChevronRightIcon(props: IconProps) {
   );
 }
 
+export function CarIcon(props: IconProps) {
+  return (
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" {...props}>
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9L18 10l-2.5-5c-.3-.6-.9-1-1.5-1h-4c-.6 0-1.2.4-1.5 1L6 10l-2.5 1.1C2.7 11.3 2 12.1 2 13v3c0 .6.4 1 1 1h2m14 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0m-8 0a2 2 0 11-4 0m4 0a2 2 0 10-4 0"
+      />
+    </svg>
+  );
+}
+
 export function ChipIcon(props: IconProps) {
   return (
     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" {...props}>

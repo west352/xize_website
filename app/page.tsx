@@ -4,14 +4,13 @@ import {
   LogoIcon,
   ChevronDownIcon,
   ArrowRightIcon,
-  ChipIcon,
-  BuildingIcon,
+  CarIcon,
   CubeIcon,
-  ShoppingBagIcon,
   GlobeIcon,
   ShieldCheckIcon,
   ClockIcon,
   LocationIcon,
+  BuildingIcon,
   UsersIcon,
   MailIcon,
   WeChatIcon,
@@ -35,24 +34,14 @@ const contact = {
 
 const services = [
   {
-    Icon: ChipIcon,
-    title: 'BYD Parts',
-    desc: 'Extensive inventory of genuine and aftermarket parts for all BYD models, including electric and hybrid vehicles.',
-  },
-  {
-    Icon: BuildingIcon,
-    title: 'Volkswagen Parts',
-    desc: 'Complete range of Volkswagen components from engine parts to body panels, serving all major VW models.',
+    Icon: CarIcon,
+    title: 'Products',
+    desc: 'Extensive inventory of genuine and aftermarket parts for BYD and Volkswagen vehicles, including electric and hybrid models.',
   },
   {
     Icon: CubeIcon,
-    title: 'Wholesale Distribution',
-    desc: 'Bulk orders with competitive pricing for auto repair shops, dealers, and distributors across the region.',
-  },
-  {
-    Icon: ShoppingBagIcon,
-    title: 'Retail Sales',
-    desc: 'Walk-in customers welcome at our 10+ stores. Expert staff ready to help you find the right parts.',
+    title: 'Wholesale and Retail',
+    desc: 'Bulk orders with competitive pricing for dealers and distributors, plus walk-in retail at our 10+ stores.',
   },
   {
     Icon: GlobeIcon,
@@ -250,7 +239,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 md:grid-cols-2">
             {services.map((service, i) => (
               <div
                 key={i}
