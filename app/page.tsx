@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
-        <div className="absolute inset-0 h-full w-full">
+        <div className="absolute inset-0">
           <video
             autoPlay
             muted
@@ -114,20 +114,20 @@ export default function Home() {
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center rounded-lg border border-transparent bg-primary-600 px-8 py-4 text-lg font-medium text-white shadow-sm transition-colors duration-200 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-lg font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             >
               Get in Touch
             </a>
             <a
               href="#about"
-              className="inline-flex items-center justify-center rounded-lg border border-transparent bg-primary-100 px-8 py-4 text-lg font-medium text-primary-700 transition-colors duration-200 hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-lg bg-primary-100 px-8 py-4 text-lg font-medium text-primary-700 transition-colors hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             >
               Learn More
             </a>
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 transform animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
           <ChevronDownIcon className="h-6 w-6 text-white" />
         </div>
       </section>
@@ -333,7 +333,7 @@ export default function Home() {
               <p className="mt-2 text-gray-600">Send us an inquiry</p>
               <a
                 href={`mailto:${contact.email}`}
-                className="mt-4 inline-flex w-full items-center justify-center rounded-lg border border-transparent bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
               >
                 <MailIcon className="mr-2 h-5 w-5" />
                 {contact.email}

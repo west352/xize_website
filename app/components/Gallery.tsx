@@ -78,14 +78,14 @@ export default function Gallery() {
 
         <button
           onClick={() => goTo(current - 1)}
-          className="absolute left-4 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-500"
+          className="absolute left-4 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all hover:scale-110 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-500"
         >
           <ChevronLeftIcon className="h-6 w-6" />
         </button>
 
         <button
           onClick={() => goTo(current + 1)}
-          className="absolute right-4 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-500"
+          className="absolute right-4 top-1/2 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-gray-800 shadow-lg transition-all hover:scale-110 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-500"
         >
           <ChevronRightIcon className="h-6 w-6" />
         </button>
@@ -96,7 +96,7 @@ export default function Gallery() {
           <button
             key={i}
             onClick={() => goTo(i)}
-            className={`h-3 w-3 rounded-full transition-all duration-200 ${i === current ? 'bg-primary-600' : 'bg-gray-300 hover:bg-gray-400'}`}
+            className={`h-3 w-3 rounded-full transition-colors ${i === current ? 'bg-primary-600' : 'bg-gray-300 hover:bg-gray-400'}`}
           />
         ))}
       </div>
