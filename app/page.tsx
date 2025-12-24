@@ -1,9 +1,10 @@
 import Navigation from './components/Navigation';
 import Gallery from './components/Gallery';
+import Footer from './components/Footer';
+import AnchorLink from './components/AnchorLink';
 import {
-  LogoIcon,
-  ChevronDownIcon,
   ArrowRightIcon,
+  ChevronDownIcon,
   CarIcon,
   CubeIcon,
   GlobeIcon,
@@ -81,7 +82,6 @@ export default function Home() {
     <>
       <Navigation />
 
-      {/* Hero Section */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
         <div className="absolute inset-0">
           <video
@@ -112,18 +112,18 @@ export default function Home() {
             industry expertise serving customers worldwide.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-            <a
+            <AnchorLink
               href="#contact"
               className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-8 py-4 text-lg font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             >
               Get in Touch
-            </a>
-            <a
+            </AnchorLink>
+            <AnchorLink
               href="#about"
               className="inline-flex items-center justify-center rounded-lg bg-primary-100 px-8 py-4 text-lg font-medium text-primary-700 transition-colors hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
             >
               Learn More
-            </a>
+            </AnchorLink>
           </div>
         </div>
 
@@ -165,13 +165,13 @@ export default function Home() {
                 <strong className="text-primary-600">auto parts export services</strong>. Feel free
                 to contact us if you&apos;re interested in partnering with a reliable supplier!
               </p>
-              <a
+              <AnchorLink
                 href="#contact"
                 className="inline-flex items-center font-medium text-primary-600 transition-colors hover:text-primary-700"
               >
                 Contact us today
                 <ArrowRightIcon className="ml-2 h-5 w-5" />
-              </a>
+              </AnchorLink>
             </div>
 
             <div className="relative">
@@ -350,67 +350,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 py-12 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <div>
-              <div className="flex items-center space-x-2">
-                <LogoIcon className="h-8 w-8 text-primary-400" />
-                <span className="text-xl font-bold">Xize Auto Parts</span>
-              </div>
-              <p className="mt-4 text-gray-400">
-                Professional automotive parts for BYD and Volkswagen vehicles. Serving customers
-                with quality and reliability since 1995.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="mb-4 text-lg font-semibold">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#about" className="text-gray-400 transition-colors hover:text-white">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#services" className="text-gray-400 transition-colors hover:text-white">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#why-us" className="text-gray-400 transition-colors hover:text-white">
-                    Why Choose Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#contact" className="text-gray-400 transition-colors hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="mb-4 text-lg font-semibold">Contact Info</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li className="flex items-center">
-                  <LocationIcon className="mr-2 h-8 w-8" />
-                  {address}
-                </li>
-                <li className="flex items-center">
-                  <MailIcon className="mr-2 h-5 w-5" />
-                  {contact.email}
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Shandong Xize Auto Parts Co., Ltd. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer address={address} email={contact.email} />
     </>
   );
 }
