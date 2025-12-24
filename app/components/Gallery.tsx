@@ -5,31 +5,31 @@ import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
 
 const slides = [
   {
-    src: 'https://picsum.photos/seed/warehouse1/1200/600',
+    src: '/images/gallery/gallery1.jpg',
     alt: 'Warehouse Facility',
     title: 'Our Warehouse',
     desc: '2,000+ square meters of storage space',
   },
   {
-    src: 'https://picsum.photos/seed/autoparts1/1200/600',
+    src: '/images/gallery/gallery2.jpg',
     alt: 'Auto Parts Display',
     title: 'Parts Inventory',
     desc: 'Extensive selection of BYD and Volkswagen parts',
   },
   {
-    src: 'https://picsum.photos/seed/team1/1200/600',
+    src: '/images/gallery/gallery3.jpg',
     alt: 'Our Team',
     title: 'Professional Team',
     desc: '100+ dedicated employees ready to serve you',
   },
   {
-    src: 'https://picsum.photos/seed/store1/1200/600',
+    src: '/images/gallery/gallery4.jpg',
     alt: 'Retail Store',
     title: 'Chain Stores',
     desc: '10+ locations across Shandong Province',
   },
   {
-    src: 'https://picsum.photos/seed/shipping1/1200/600',
+    src: '/images/gallery/gallery5.jpg',
     alt: 'Export Services',
     title: 'Global Export',
     desc: 'Expanding our reach to customers worldwide',
