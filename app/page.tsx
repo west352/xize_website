@@ -32,6 +32,8 @@ const contact = {
   email: 'xize.autoparts@gmail.com',
 };
 
+const address = "No. 10, Qingdao Road Rongtong Auto Parts City, Unit 1-7, Jinan, Shandong Province, China"
+
 const services = [
   {
     Icon: CarIcon,
@@ -300,10 +302,13 @@ export default function Home() {
                 <WeChatIcon className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">WeChat</h3>
-              <p className="mt-2 text-gray-600">Scan or search our ID</p>
-              <div className="mt-4 rounded-lg bg-gray-100 p-4">
-                <p className="font-mono text-lg text-primary-600">{contact.wechat}</p>
-              </div>
+              <p className="mt-2 text-gray-600">Scan to connect</p>
+              <img
+                src="/images/contacts/Wechat_QR.png"
+                alt="WeChat QR Code"
+                className="mt-4 h-40 w-40 rounded-lg object-contain"
+              />
+              <p className="mt-2 font-mono text-sm text-primary-600">{contact.wechat}</p>
             </div>
 
             <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
@@ -311,16 +316,13 @@ export default function Home() {
                 <WhatsAppIcon className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900">WhatsApp</h3>
-              <p className="mt-2 text-gray-600">Chat with us directly</p>
-              <a
-                href="https://wa.me/8612345678900"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-flex w-full items-center justify-center rounded-lg border border-transparent bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors duration-200 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-              >
-                <WhatsAppIcon className="mr-2 h-5 w-5" />
-                {contact.whatsapp}
-              </a>
+              <p className="mt-2 text-gray-600">Scan to chat</p>
+              <img
+                src="/images/contacts/WhatsApp_QR.png"
+                alt="WhatsApp QR Code"
+                className="mt-4 h-40 w-40 rounded-lg object-contain"
+              />
+              <p className="mt-2 font-mono text-sm text-primary-600">{contact.whatsapp}</p>
             </div>
 
             <div className="flex flex-col items-center rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl">
@@ -342,7 +344,7 @@ export default function Home() {
           <div className="mt-16 text-center">
             <p className="text-gray-600">
               <LocationIcon className="mr-2 inline-block h-5 w-5 text-primary-600" />
-              Shandong Province, China
+              {address}
             </p>
           </div>
         </div>
@@ -393,8 +395,8 @@ export default function Home() {
               <h4 className="mb-4 text-lg font-semibold">Contact Info</h4>
               <ul className="space-y-2 text-gray-400">
                 <li className="flex items-center">
-                  <LocationIcon className="mr-2 h-5 w-5" />
-                  Shandong Province, China
+                  <LocationIcon className="mr-2 h-8 w-8" />
+                  {address}
                 </li>
                 <li className="flex items-center">
                   <MailIcon className="mr-2 h-5 w-5" />
@@ -405,7 +407,7 @@ export default function Home() {
           </div>
 
           <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Shandong Xize Auto Parts Co., Ltd. All rights reserved.</p>
+            <p>&copy; 2025 Shandong Xize Auto Parts Co., Ltd. All rights reserved.</p>
           </div>
         </div>
       </footer>
