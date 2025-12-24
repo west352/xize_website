@@ -27,9 +27,9 @@ const company = {
 };
 
 const contact = {
-  wechat: 'xize_autoparts',
-  whatsapp: '+86-123-4567-8900',
-  email: 'contact@xizeautoparts.com',
+  wechat: 'LCJ7789395696',
+  whatsapp: '+1 (236) 881-8788',
+  email: 'xize.autoparts@gmail.com',
 };
 
 const services = [
