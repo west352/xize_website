@@ -33,7 +33,8 @@ const contact = {
   email: 'xize.autoparts@gmail.com',
 };
 
-const address = "No. 10, Qingdao Road Rongtong Auto Parts City, Unit 1-7, Jinan, Shandong Province, China"
+const address =
+  'No. 10, Qingdao Road Rongtong Auto Parts City, Unit 1-7, Jinan, Shandong Province, China';
 
 const services = [
   {

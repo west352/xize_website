@@ -1,14 +1,8 @@
 'use client';
 
 import { LogoIcon, LocationIcon, MailIcon } from './Icons';
+import { navLinks } from './Navigation';
 import AnchorLink from './AnchorLink';
-
-const quickLinks = [
-  { href: '#about', label: 'About Us' },
-  { href: '#services', label: 'Services' },
-  { href: '#why-us', label: 'Why Choose Us' },
-  { href: '#contact', label: 'Contact' },
-];
 
 type FooterProps = {
   address: string;
@@ -26,15 +20,15 @@ export default function Footer({ address, email }: FooterProps) {
               <span className="text-xl font-bold">Xize Auto Parts</span>
             </div>
             <p className="mt-4 text-gray-400">
-              Professional automotive parts for BYD and Volkswagen vehicles. Serving customers
-              with quality and reliability since 1995.
+              Professional automotive parts for BYD and Volkswagen vehicles. Serving customers with
+              quality and reliability since 1995.
             </p>
           </div>
 
           <div>
             <h4 className="mb-4 text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
+              {navLinks.map((link) => (
                 <li key={link.href}>
                   <AnchorLink
                     href={link.href}

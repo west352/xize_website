@@ -9,6 +9,7 @@ export const navLinks = [
   { href: '#gallery', label: 'Gallery' },
   { href: '#services', label: 'Services' },
   { href: '#why-us', label: 'Why Choose Us' },
+  { href: '#contact', label: 'Contact Us' },
 ];
 
 export default function Navigation() {
@@ -28,21 +29,27 @@ export default function Navigation() {
           </div>
 
           <div className="hidden items-center space-x-8 md:flex">
-            {navLinks.map((link) => (
-              <AnchorLink
-                key={link.href}
-                href={link.href}
-                className="font-medium text-gray-700 transition-colors hover:text-primary-600"
-              >
-                {link.label}
-              </AnchorLink>
-            ))}
-            <AnchorLink
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
-            >
-              Contact Us
-            </AnchorLink>
+            {navLinks.map((link) => {
+              if (link.href === '#contact')
+                return (
+                  <AnchorLink
+                    key={link.href}
+                    href={link.href}
+                    className="inline-flex items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                  >
+                    Contact Us
+                  </AnchorLink>
+                );
+              return (
+                <AnchorLink
+                  key={link.href}
+                  href={link.href}
+                  className="font-medium text-gray-700 transition-colors hover:text-primary-600"
+                >
+                  {link.label}
+                </AnchorLink>
+              );
+            })}
           </div>
 
           <div className="md:hidden">
@@ -60,7 +67,7 @@ export default function Navigation() {
         {isOpen && (
           <div className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {[...navLinks, { href: '#contact', label: 'Contact Us' }].map((link) => (
+              {navLinks.map((link) => (
                 <AnchorLink
                   key={link.href}
                   href={link.href}

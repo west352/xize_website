@@ -1,6 +1,5 @@
 type IconProps = React.SVGProps<SVGSVGElement>;
 
-
 export function LogoIcon(props: IconProps) {
   return (
     <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
