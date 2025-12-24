@@ -1,8 +1,9 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
+# Next.js
+.next/
+out/
 
 # IDE
 .idea/
@@ -20,3 +21,7 @@ npm-debug.log*
 .env
 .env.local
 .env.*.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
