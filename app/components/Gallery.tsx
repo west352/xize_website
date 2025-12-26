@@ -3,36 +3,37 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
 
+
 const slides = [
   {
-    src: '/images/gallery/gallery1.jpg',
-    alt: 'Warehouse Facility',
-    title: 'Our Warehouse',
-    desc: '2,000+ square meters of storage space',
+    src: '/images/gallery/inventory1.jpeg',
+    alt: 'Autoparts Inventory',
+    title: 'Parts Inventory',
+    desc: 'High-capacity racking to keep goods protected and accessible',
   },
   {
-    src: '/images/gallery/gallery2.jpg',
-    alt: 'Auto Parts Display',
+    src: '/images/gallery/inventory2.jpeg',
+    alt: 'Autoparts Inventory',
     title: 'Parts Inventory',
     desc: 'Extensive selection of BYD and Volkswagen parts',
   },
   {
-    src: '/images/gallery/gallery3.jpg',
+    src: '/images/gallery/warehouse.jpeg',
+    alt: 'Warehouse Facility',
+    title: 'Our Warehouse',
+    desc: '2,000 square meters of storage space',
+  },
+  {
+    src: '/images/gallery/office1.jpeg',
+    alt: 'Our Team',
+    title: 'Professional Team',
+    desc: 'Expanding our reach to customers worldwide',
+  },
+  {
+    src: '/images/gallery/office2.jpeg',
     alt: 'Our Team',
     title: 'Professional Team',
     desc: '100+ dedicated employees ready to serve you',
-  },
-  {
-    src: '/images/gallery/gallery4.jpg',
-    alt: 'Retail Store',
-    title: 'Chain Stores',
-    desc: '10+ locations across Shandong Province',
-  },
-  {
-    src: '/images/gallery/gallery5.jpg',
-    alt: 'Export Services',
-    title: 'Global Export',
-    desc: 'Expanding our reach to customers worldwide',
   },
 ];
 
@@ -62,7 +63,7 @@ export default function Gallery() {
           style={{ transform: `translateX(-${current * 100}%)` }}
         >
           {slides.map((slide, i) => (
-            <div key={i} className="relative min-w-full flex-shrink-0">
+            <div key={i} className="relative w-full flex-none">
               <img
                 src={slide.src}
                 alt={slide.alt}
