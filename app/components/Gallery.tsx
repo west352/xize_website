@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
 
-
 const slides = [
   {
     src: '/images/gallery/inventory1.jpeg',
