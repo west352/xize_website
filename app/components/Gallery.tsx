@@ -67,7 +67,7 @@ export default function Gallery() {
               <img
                 src={slide.src}
                 alt={slide.alt}
-                className="h-64 w-full object-cover sm:h-80 md:h-96 lg:h-[500px]"
+                className="h-64 w-full object-cover sm:h-80 md:h-96 lg:h-[650px]"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                 <h3 className="text-xl font-semibold text-white">{slide.title}</h3>
