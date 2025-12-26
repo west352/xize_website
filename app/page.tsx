@@ -21,7 +21,7 @@ import {
 const company = {
   name: 'Shandong Xize Auto Parts Co., Ltd.',
   tagline: 'Your Trusted Partner for Quality Auto Parts',
-  yearsExperience: 30,
+  yearsExperience: 25,
   storeCount: 10,
   warehouseSize: 2000,
   employeeCount: 100,

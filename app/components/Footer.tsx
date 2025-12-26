@@ -21,7 +21,7 @@ export default function Footer({ address, email }: FooterProps) {
             </div>
             <p className="mt-4 text-gray-400">
               Professional automotive parts for BYD and Volkswagen vehicles. Serving customers with
-              quality and reliability since 1995.
+              quality and reliability since 1998.
             </p>
           </div>
 
