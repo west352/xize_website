@@ -91,10 +91,10 @@ export default function Home() {
             loop
             playsInline
             className="absolute inset-0 h-full w-full object-cover"
-            poster="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            poster="/images/background.png"
           >
             <source
-              src="https://videos.pexels.com/video-files/8987200/8987200-uhd_2560_1440_30fps.mp4"
+              src="/videos/background.mp4"
               type="video/mp4"
             />
           </video>
