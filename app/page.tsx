@@ -236,7 +236,7 @@ export default function Home() {
               Product Catalogues
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Download our catalogues to explore our full range of auto parts
+              View our catalogues to explore our full range of auto parts
             </p>
           </div>
           <Catalogues />

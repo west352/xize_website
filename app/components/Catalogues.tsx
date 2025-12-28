@@ -7,21 +7,21 @@ export default function Catalogues() {
   }
 
   return (
-    <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-16 flex flex-wrap justify-center gap-6">
       {catalogues.map((catalogue) => {
         const pdfUrl = getCatalogueUrl(catalogue.filename);
 
         return (
           <div
             key={catalogue.id}
-            className="group rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl"
+            className="group flex flex-col rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl sm:w-96"
           >
             <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors duration-300 group-hover:bg-primary-600 group-hover:text-white">
               <DocumentIcon className="h-7 w-7" />
             </div>
 
             <h3 className="mt-6 text-xl font-semibold text-gray-900">{catalogue.title}</h3>
-            <p className="mt-2 text-gray-600">{catalogue.description}</p>
+            <p className="mt-2 flex-grow text-gray-600">{catalogue.description}</p>
 
             <div className="mt-6">
               <a
