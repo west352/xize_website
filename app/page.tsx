@@ -93,10 +93,7 @@ export default function Home() {
             className="absolute inset-0 h-full w-full object-cover"
             poster="/images/background.png"
           >
-            <source
-              src="/videos/background.mp4"
-              type="video/mp4"
-            />
+            <source src="/videos/background.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-primary-900/70"></div>
         </div>
