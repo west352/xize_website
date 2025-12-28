@@ -22,11 +22,9 @@ export default function Navigation() {
     <nav className="fixed left-0 right-0 top-0 z-50 bg-white/95 shadow-sm backdrop-blur-sm">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <div className="flex-shrink-0">
-            <AnchorLink href="#" className="flex items-center space-x-2">
-              <LogoIcon className="h-8 w-8 text-primary-600" />
-              <span className="text-xl font-bold text-gray-900">Xize Auto Parts</span>
-            </AnchorLink>
+          <div className="flex flex-shrink-0 items-center space-x-2">
+            <LogoIcon className="h-8 w-8 text-primary-600" />
+            <span className="text-xl font-bold text-gray-900">Xize Auto Parts</span>
           </div>
 
           <div className="hidden items-center space-x-8 md:flex">
