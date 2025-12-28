@@ -7,6 +7,7 @@ import AnchorLink from './AnchorLink';
 export const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#gallery', label: 'Gallery' },
+  { href: '#catalogues', label: 'Catalogues' },
   { href: '#services', label: 'Services' },
   { href: '#why-us', label: 'Why Choose Us' },
   { href: '#contact', label: 'Contact Us' },

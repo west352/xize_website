@@ -1,5 +1,6 @@
 import Navigation from './components/Navigation';
 import Gallery from './components/Gallery';
+import Catalogues from './components/Catalogues';
 import Footer from './components/Footer';
 import AnchorLink from './components/AnchorLink';
 import {
@@ -224,6 +225,21 @@ export default function Home() {
             </p>
           </div>
           <Gallery />
+        </div>
+      </section>
+
+      {/* Catalogues Section */}
+      <section id="catalogues" className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Product Catalogues
+            </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
+              Download our catalogues to explore our full range of auto parts
+            </p>
+          </div>
+          <Catalogues />
         </div>
       </section>
 
