@@ -22,24 +22,6 @@ export const catalogues: Catalogue[] = [
     description: 'Comprehensive parts listing for Volkswagen models',
     filename: 'vw.pdf',
   },
-  {
-    id: 'byd-parts2',
-    title: 'BYD Parts',
-    description: 'Complete catalogue of genuine and aftermarket parts for BYD vehicles',
-    filename: 'byd.pdf',
-  },
-  {
-    id: 'vw-parts2',
-    title: 'Volkswagen Parts',
-    description: 'Comprehensive parts listing for Volkswagen models',
-    filename: 'vw.pdf',
-  },
-  {
-    id: 'vw-parts3',
-    title: 'Volkswagen Parts',
-    description: 'Comprehensive parts listing for Volkswagen models',
-    filename: 'vw.pdf',
-  },
 ];
 
 // Helper function to get the full URL for a catalogue PDF

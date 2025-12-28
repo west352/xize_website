@@ -7,7 +7,7 @@ export default function Catalogues() {
   }
 
   return (
-    <div className="mt-16 flex flex-wrap justify-center gap-6">
+    <div className="mx-auto mt-16 grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
       {catalogues.map((catalogue) => {
         const pdfUrl = getCatalogueUrl(catalogue.filename);
 
