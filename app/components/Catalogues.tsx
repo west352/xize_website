@@ -1,5 +1,5 @@
 import { catalogues, getCatalogueUrl } from '../data/catalogues';
-import { DocumentIcon, ExternalLinkIcon } from './Icons';
+import { PdfIcon, ExternalLinkIcon } from './Icons';
 
 export default function Catalogues() {
   if (catalogues.length === 0) {
@@ -17,7 +17,7 @@ export default function Catalogues() {
             className="group flex flex-col rounded-xl bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-xl sm:w-96"
           >
             <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary-100 text-primary-600 transition-colors duration-300 group-hover:bg-primary-600 group-hover:text-white">
-              <DocumentIcon className="h-7 w-7" />
+              <PdfIcon className="h-7 w-7" />
             </div>
 
             <h3 className="mt-6 text-xl font-semibold text-gray-900">{catalogue.title}</h3>
