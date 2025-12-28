@@ -90,10 +90,6 @@ export default function Home() {
             muted
             loop
             playsInline
-            webkit-playsinline="true"
-            x5-playsinline="true"
-            x5-video-player-type="h5"
-            x5-video-player-fullscreen="true"
             className="absolute inset-0 h-full w-full object-cover"
             poster="/images/background.png"
           >
