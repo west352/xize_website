@@ -90,6 +90,8 @@ export default function Home() {
             muted
             loop
             playsInline
+            x5-playsinline="true"
+            x5-video-player-type="h5"
             className="absolute inset-0 h-full w-full object-cover"
             poster="/images/background.png"
           >
