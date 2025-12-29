@@ -12,25 +12,25 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://xizeautoparts.com'),
   title: 'Shandong Xize Auto Parts - BYD & Volkswagen Parts Wholesale & Export',
   description:
-    'Shandong Xize Auto Parts Co., Ltd. is a professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts. 30 years experience, 10+ stores, export services available.',
+    'Shandong Xize Automotive Technology Co., Ltd is a professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts. 30 years experience, 10+ stores, export services available.',
   keywords:
     'auto parts, BYD parts, Volkswagen parts, car parts wholesale, automotive parts export, Shandong auto parts, China auto parts supplier',
-  authors: [{ name: 'Shandong Xize Auto Parts Co., Ltd.' }],
+  authors: [{ name: 'Shandong Xize Automotive Technology Co., Ltd' }],
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     url: 'https://xizeautoparts.com/',
     title: 'Shandong Xize Auto Parts - BYD & Volkswagen Parts Wholesale & Export',
     description:
-      'Shandong Xize Auto Parts Co., Ltd. is a professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts. 30 years experience, 10+ stores, export services available.',
-    images: ['/images/og-image.jpg'],
+      'Shandong Xize Automotive Technology Co., Ltd is a professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts. 30 years experience, 10+ stores, export services available.',
+    images: ['/images/company.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Shandong Xize Auto Parts - BYD & Volkswagen Parts Wholesale & Export',
     description:
-      'Shandong Xize Auto Parts Co., Ltd. is a professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts. 30 years experience, 10+ stores, export services available.',
-    images: ['/images/og-image.jpg'],
+      'Shandong Xize Automotive Technology Co., Ltd is a professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts. 30 years experience, 10+ stores, export services available.',
+    images: ['/images/company.png'],
   },
   icons: {
     icon: '/images/favicon.svg',
@@ -47,11 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'Shandong Xize Auto Parts Co., Ltd.',
+              name: 'Shandong Xize Automotive Technology Co., Ltd',
               description:
                 'Professional automotive parts company specializing in wholesale and retail of BYD and Volkswagen parts',
               url: 'https://xizeautoparts.com',
-              foundingDate: '1995',
+              foundingDate: '1998',
               numberOfEmployees: {
                 '@type': 'QuantitativeValue',
                 value: 100,
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               contactPoint: {
                 '@type': 'ContactPoint',
                 contactType: 'sales',
-                email: 'contact@xizeautoparts.com',
+                email: 'xize.autoparts@gmail.com',
               },
             }),
           }}
