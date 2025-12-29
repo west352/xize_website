@@ -20,9 +20,9 @@ import {
 } from './components/Icons';
 
 const company = {
-  name: 'Shandong Xize Automotive Technology Co., Ltd.',
+  name: 'Shandong Xize Automotive Technology Co., Ltd',
   tagline: 'Your Trusted Partner for Quality Auto Parts',
-  yearsExperience: 25,
+  yearsExperience: 30,
   storeCount: 10,
   warehouseSize: 2000,
   employeeCount: 100,
@@ -92,7 +92,7 @@ export default function Home() {
             loop
             playsInline
             className="absolute inset-0 h-full w-full object-cover"
-            poster="/images/background.png"
+            poster="/images/background.jpeg"
           >
             <source src="/videos/background.mp4" type="video/mp4" />
           </video>
@@ -178,7 +178,7 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="rounded-xl bg-white p-6 text-center shadow">
                     <div className="text-4xl font-bold text-primary-600">
-                      {company.yearsExperience}+
+                      {company.yearsExperience}
                     </div>
                     <div className="mt-2 text-sm font-medium uppercase tracking-wide text-gray-600">
                       Years Experience
