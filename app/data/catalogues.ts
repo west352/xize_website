@@ -13,15 +13,15 @@ export const catalogues: Catalogue[] = [
   {
     id: 'byd-parts',
     title: 'BYD Parts',
-    description: 'Complete catalogue of genuine and aftermarket parts for BYD vehicles',
+    description: 'Listing of OEM and aftermarket parts for BYD vehicles',
     filename: 'byd.pdf',
   },
-  {
-    id: 'vw-parts',
-    title: 'Volkswagen Parts',
-    description: 'Comprehensive parts listing for Volkswagen models',
-    filename: 'vw.pdf',
-  },
+  // {
+  //   id: 'vw-parts',
+  //   title: 'Volkswagen Parts',
+  //   description: 'Comprehensive parts listing for Volkswagen models',
+  //   filename: 'vw.pdf',
+  // },
 ];
 
 // Helper function to get the full URL for a catalogue PDF

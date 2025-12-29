@@ -20,7 +20,7 @@ import {
 } from './components/Icons';
 
 const company = {
-  name: 'Shandong Xize Auto Parts Co., Ltd.',
+  name: 'Shandong Xize Automotive Technology Co., Ltd.',
   tagline: 'Your Trusted Partner for Quality Auto Parts',
   yearsExperience: 25,
   storeCount: 10,
