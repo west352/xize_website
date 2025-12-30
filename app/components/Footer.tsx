@@ -1,15 +1,16 @@
 'use client';
 
-import { LogoIcon, LocationIcon, MailIcon } from './Icons';
+import { LogoIcon, LocationIcon, MailIcon, FacebookIcon } from './Icons';
 import { navLinks } from './Navigation';
 import AnchorLink from './AnchorLink';
 
 type FooterProps = {
   address: string;
   email: string;
+  facebook: string;
 };
 
-export default function Footer({ address, email }: FooterProps) {
+export default function Footer({ address, email, facebook }: FooterProps) {
   return (
     <footer className="bg-gray-900 py-12 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -51,6 +52,17 @@ export default function Footer({ address, email }: FooterProps) {
               <li className="flex items-center">
                 <MailIcon className="mr-2 h-5 w-5" />
                 {email}
+              </li>
+              <li className="flex items-center">
+                <a
+                  href={facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center transition-colors hover:text-white"
+                >
+                  <FacebookIcon className="mr-2 h-5 w-5" />
+                  Facebook
+                </a>
               </li>
             </ul>
           </div>
