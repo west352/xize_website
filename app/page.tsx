@@ -37,6 +37,8 @@ const contact = {
 const address =
   'No. 10, Qingdao Road Rongtong Auto Parts City, Unit 1-7, Jinan, Shandong Province, China';
 
+const facebook = 'https://www.facebook.com/share/1HF6cNtTG1/?mibextid=wwXIfr';
+
 const services = [
   {
     Icon: CarIcon,
@@ -146,9 +148,9 @@ export default function Home() {
           <div className="mt-16 grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
               <p className="text-lg leading-relaxed text-gray-600">
-                <strong className="text-gray-900">Shandong Xize Auto Parts Co., Ltd.</strong> is a
-                professional automotive parts company specializing in the wholesale and retail of
-                parts primarily for <strong className="text-primary-600">BYD</strong> and{' '}
+                <strong className="text-gray-900">{company.name}</strong> is a professional
+                automotive parts company specializing in the wholesale and retail of parts primarily
+                for <strong className="text-primary-600">BYD</strong> and{' '}
                 <strong className="text-primary-600">Volkswagen</strong> vehicles.
               </p>
               <p className="text-lg leading-relaxed text-gray-600">
@@ -364,7 +366,7 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer address={address} email={contact.email} />
+      <Footer address={address} email={contact.email} facebook={facebook} />
     </>
   );
 }
