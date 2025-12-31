@@ -27,7 +27,7 @@ export default function Navigation() {
             <span className="text-xl font-bold text-gray-900">Xize Auto Parts</span>
           </div>
 
-          <div className="hidden items-center space-x-8 md:flex">
+          <div className="hidden items-center space-x-8 lg:flex">
             {navLinks.map((link) => {
               if (link.href === '#contact')
                 return (
@@ -51,7 +51,7 @@ export default function Navigation() {
             })}
           </div>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
@@ -64,7 +64,7 @@ export default function Navigation() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navLinks.map((link) => (
                 <AnchorLink

@@ -5,3 +5,20 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide native video controls (play/resume button) */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important;
+}
+
+video::-moz-media-controls {
+  display: none !important;
+}
