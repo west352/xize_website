@@ -93,7 +93,8 @@ export default function Home() {
             muted
             loop
             playsInline
-            className="absolute inset-0 h-full w-full object-cover"
+            controls={false}
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover"
             poster="/images/background.jpeg"
           >
             <source src="/videos/background.mp4" type="video/mp4" />
