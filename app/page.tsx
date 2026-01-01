@@ -349,10 +349,10 @@ export default function Home() {
               <p className="mt-2 text-gray-600">Send us an inquiry</p>
               <a
                 href={`mailto:${contact.email}`}
-                className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+                className="mt-4 inline-flex w-full min-w-0 items-center justify-center rounded-lg bg-primary-600 px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
               >
-                <MailIcon className="mr-2 h-5 w-5" />
-                {contact.email}
+                <MailIcon className="mr-2 h-5 w-5 flex-shrink-0" />
+                <span className="break-all text-center">{contact.email}</span>
               </a>
             </div>
           </div>
