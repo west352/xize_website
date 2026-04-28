@@ -43,7 +43,7 @@ const services = [
   {
     Icon: CarIcon,
     title: 'Products',
-    desc: 'Extensive inventory of genuine and aftermarket parts for BYD and Volkswagen vehicles, including electric and hybrid models.',
+    desc: 'Extensive inventory of genuine and aftermarket parts, primarily for BYD and Volkswagen — with selections for many other major makes as well, including electric and hybrid models.',
   },
   {
     Icon: CubeIcon,
@@ -109,7 +109,7 @@ export default function Home() {
             {company.tagline}
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-200">
-            Professional automotive parts for BYD and Volkswagen vehicles. Nearly 30 years of
+            Automotive parts for BYD, Volkswagen, and many other major makes. Nearly 30 years of
             industry expertise serving customers worldwide.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -151,7 +151,14 @@ export default function Home() {
                 <strong className="text-gray-900">{company.name}</strong> is a professional
                 automotive parts company specializing in the wholesale and retail of parts primarily
                 for <strong className="text-primary-600">BYD</strong> and{' '}
-                <strong className="text-primary-600">Volkswagen</strong> vehicles.
+                <strong className="text-primary-600">Volkswagen</strong> vehicles, with a broad
+                selection for <strong className="text-primary-600">Audi</strong>,{' '}
+                <strong className="text-primary-600">BMW</strong>,{' '}
+                <strong className="text-primary-600">Mercedes-Benz</strong>,{' '}
+                <strong className="text-primary-600">Toyota</strong>,{' '}
+                <strong className="text-primary-600">Honda</strong>,{' '}
+                <strong className="text-primary-600">Geely</strong>,{' '}
+                <strong className="text-primary-600">Haval</strong>, and other major makes as well.
               </p>
               <p className="text-lg leading-relaxed text-gray-600">
                 With nearly{' '}
@@ -238,10 +245,11 @@ export default function Home() {
               Product Catalogues
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Check out our catalogues to explore our full range of auto parts
+              Browse our organized BYD parts catalogue, and find Volkswagen and other parts
+              regularly posted on our Facebook page.
             </p>
           </div>
-          <Catalogues />
+          <Catalogues facebookUrl={facebook} />
         </div>
       </section>
 

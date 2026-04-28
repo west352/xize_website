@@ -8,13 +8,31 @@ const slides = [
     src: '/images/gallery/inventory1.jpeg',
     alt: 'Autoparts Inventory',
     title: 'Parts Inventory',
-    desc: 'High-capacity racking to keep goods protected and accessible',
+    desc: 'Extensive selection of BYD, Volkswagen, and other auto parts',
   },
   {
     src: '/images/gallery/inventory2.jpeg',
     alt: 'Autoparts Inventory',
     title: 'Parts Inventory',
-    desc: 'Extensive selection of BYD and Volkswagen parts',
+    desc: 'Extensive selection of BYD, Volkswagen, and other auto parts',
+  },
+  {
+    src: '/images/gallery/inventory3.jpeg',
+    alt: 'Autoparts Inventory',
+    title: 'Parts Inventory',
+    desc: 'Extensive selection of BYD, Volkswagen, and other auto parts',
+  },
+  {
+    src: '/images/gallery/inventory4.jpeg',
+    alt: 'Autoparts Inventory',
+    title: 'Parts Inventory',
+    desc: 'Extensive selection of BYD, Volkswagen, and other auto parts',
+  },
+  {
+    src: '/images/gallery/inventory5.jpeg',
+    alt: 'Autoparts Inventory',
+    title: 'Parts Inventory',
+    desc: 'Extensive selection of BYD, Volkswagen, and other auto parts',
   },
   {
     src: '/images/gallery/warehouse.jpeg',
@@ -23,16 +41,16 @@ const slides = [
     desc: '2,000 square meters of storage space',
   },
   {
-    src: '/images/gallery/office1.jpeg',
-    alt: 'Our Team',
-    title: 'Professional Team',
+    src: '/images/gallery/office1.jpg',
+    alt: 'Our Office',
+    title: 'Our Office',
     desc: 'Expanding our reach to customers worldwide',
   },
   {
-    src: '/images/gallery/office2.jpeg',
-    alt: 'Our Team',
-    title: 'Professional Team',
-    desc: '100+ dedicated employees ready to serve you',
+    src: '/images/gallery/office2.jpg',
+    alt: 'Our Office',
+    title: 'Our Office',
+    desc: 'Expanding our reach to customers worldwide',
   },
 ];
 
