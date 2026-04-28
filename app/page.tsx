@@ -238,10 +238,11 @@ export default function Home() {
               Product Catalogues
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-gray-600">
-              Check out our catalogues to explore our full range of auto parts
+              Browse our organized BYD parts catalogue, and find Volkswagen and other parts
+              regularly posted on our Facebook page.
             </p>
           </div>
-          <Catalogues />
+          <Catalogues facebookUrl={facebook} />
         </div>
       </section>
 
