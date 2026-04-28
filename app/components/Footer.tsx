@@ -21,8 +21,9 @@ export default function Footer({ address, email, facebook }: FooterProps) {
               <span className="text-xl font-bold">Xize Auto Parts</span>
             </div>
             <p className="mt-4 text-gray-400">
-              Professional automotive parts for BYD and Volkswagen vehicles. Serving customers with
-              quality and reliability since 1998.
+              Professional automotive parts supplier primarily for BYD and Volkswagen — with
+              selections for many other major makes as well. Serving customers with quality and
+              reliability since 1998.
             </p>
           </div>
 
@@ -69,7 +70,7 @@ export default function Footer({ address, email, facebook }: FooterProps) {
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 Shandong Xize Auto Parts Co., Ltd. All rights reserved.</p>
+          <p>&copy; 2026 Shandong Xize Auto Parts Co., Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

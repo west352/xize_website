@@ -48,7 +48,7 @@ export default function Catalogues({ facebookUrl }: CataloguesProps) {
         </h3>
         <p className="mt-2 flex-grow text-gray-600">
           Volkswagen parts and other inventory are regularly posted on our Facebook page with photos
-          and details. Message us there for availability and pricing.
+          and details. Let us know what you are looking for!
         </p>
 
         <div className="mt-6">
