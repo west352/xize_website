@@ -31,7 +31,7 @@ const company = {
 const contact = {
   wechat: 'LCJ7789395696',
   whatsapp: '+1 (236) 881-8788',
-  email: 'xize.autoparts@gmail.com',
+  email: 'sales@xizeautoparts.com',
 };
 
 const address =
