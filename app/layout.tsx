@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               contactPoint: {
                 '@type': 'ContactPoint',
                 contactType: 'sales',
-                email: 'xize.autoparts@gmail.com',
+                email: 'sales@xizeautoparts.com',
               },
             }),
           }}
