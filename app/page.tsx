@@ -155,10 +155,7 @@ export default function Home() {
                 selection for <strong className="text-primary-600">Audi</strong>,{' '}
                 <strong className="text-primary-600">BMW</strong>,{' '}
                 <strong className="text-primary-600">Mercedes-Benz</strong>,{' '}
-                <strong className="text-primary-600">Toyota</strong>,{' '}
-                <strong className="text-primary-600">Honda</strong>,{' '}
-                <strong className="text-primary-600">Geely</strong>,{' '}
-                <strong className="text-primary-600">Haval</strong>, and other major makes as well.
+                <strong className="text-primary-600">Toyota</strong>, and other major makes as well.
               </p>
               <p className="text-lg leading-relaxed text-gray-600">
                 With nearly{' '}
